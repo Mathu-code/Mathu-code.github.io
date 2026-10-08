@@ -488,9 +488,9 @@ function initContactForm() {
   const copyEmailBtn = document.getElementById("copy-email-btn");
 
   copyEmailBtn?.addEventListener("click", () => {
-    const email = "mathurank@gmail.com";
+    const email = "mathurankoneswaran@gmail.com";
     navigator.clipboard.writeText(email).then(() => {
-      showToast("Email copied to clipboard! (mathurank@gmail.com)");
+      showToast("Email copied to clipboard! (mathurankoneswaran@gmail.com)");
     });
   });
 
@@ -502,7 +502,7 @@ function initContactForm() {
     const message = document.getElementById("contact-message")?.value || "";
 
     // Trigger direct email client with pre-filled content
-    const mailtoUrl = `mailto:mathurank@gmail.com?subject=${encodeURIComponent(
+    const mailtoUrl = `mailto:mathurankoneswaran@gmail.com?subject=${encodeURIComponent(
       `[Portfolio Inquiry] ${subject} - from ${name}`
     )}&body=${encodeURIComponent(
       `Hi Mathuran,\n\n${message}\n\nBest regards,\n${name}\nEmail: ${email}`
