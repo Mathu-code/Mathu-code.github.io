@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mathuran (Mathu) | Full Stack Engineer & AI / ML Specialist</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Official portfolio of Mathuran (Mathu-code) — Full Stack Engineer & AI/ML Specialist studying Data Science at SLIIT. Explore cutting-edge machine learning projects, full-stack web applications, and interactive AI demos.">
+  <meta name="keywords" content="Mathuran, Mathu, Mathu-code, Full Stack Engineer, AI ML Engineer, Data Science SLIIT, Machine Learning, Deep Learning, React, Next.js, Python, Sri Lanka">
+  <meta name="author" content="Mathuran">
+  <link rel="canonical" href="http://mathu.me/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://mathu.me/">
+  <meta property="og:title" content="Mathuran | Full Stack Engineer & AI/ML Specialist">
+  <meta property="og:description" content="Data Science @ SLIIT | Machine Learning • Full Stack Web • Applied AI. Explore my portfolio and live projects.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/217357768?v=4">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="http://mathu.me/">
+  <meta property="twitter:title" content="Mathuran | Full Stack Engineer & AI/ML Specialist">
+  <meta property="twitter:description" content="Data Science @ SLIIT | Machine Learning • Full Stack Web • Applied AI. Explore my portfolio and live projects.">
+  <meta property="twitter:image" content="https://avatars.githubusercontent.com/u/217357768?v=4">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mathuran",
+    "url": "http://mathu.me",
+    "image": "https://avatars.githubusercontent.com/u/217357768?v=4",
+    "sameAs": [
+      "https://github.com/Mathu-code",
+      "https://x.com/MassMathuran"
+    ],
+    "jobTitle": "Full Stack Engineer & AI / ML Specialist",
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Sri Lanka Institute of Information Technology (SLIIT)"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Neural Particle Canvas -->
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- Navigation Header -->
+  <header class="header-nav" id="main-header">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Mathuran Home">
+        <div class="logo-symbol">M</div>
+        <span>mathu<span class="text-cyan">.me</span></span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#ai-playground" class="nav-link">AI Lab</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Tech Stack</a></li>
+          <li><a href="#terminal" class="nav-link">Terminal</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+        <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle Theme">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm" style="display: none; @media(min-width: 640px){display: inline-flex;}">
+          Hire Me
+        </a>
+
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <a href="#home" class="mobile-nav-link">Home</a>
+    <a href="#ai-playground" class="mobile-nav-link">AI Intelligence Lab</a>
+    <a href="#projects" class="mobile-nav-link">Projects</a>
+    <a href="#skills" class="mobile-nav-link">Tech Stack</a>
+    <a href="#terminal" class="mobile-nav-link">Interactive Terminal</a>
+    <a href="#education" class="mobile-nav-link">Education & Journey</a>
+    <a href="#contact" class="mobile-nav-link">Contact Me</a>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-status-pill">
+            <span class="status-dot-pulse"></span>
+            <span>Open for AI / Full Stack Roles & Internships</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Mathuran</span>
+          </h1>
+
+          <div class="hero-typing-wrap">
+            <span>I build</span>
+            <span class="text-cyan" id="hero-typing-target"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-bio">
+            Data Science undergraduate at <strong>SLIIT</strong> & passionate Full Stack Engineer. Specializing in bridging <strong>Machine Learning & Applied Deep Learning</strong> with resilient, high-performance web and cloud platforms.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Explore Projects
+            </a>
+            <a href="#ai-playground" class="btn btn-outline">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
+              Interactive AI Lab
+            </a>
+            <a href="#contact" class="btn btn-accent">
+              Let's Connect
+            </a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-number text-cyan" id="stat-github-repos">20+</span>
+              <span class="metric-label">Repositories</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number text-purple">5+</span>
+              <span class="metric-label">ML & AI Pipelines</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-number text-emerald">4+</span>
+              <span class="metric-label">Live Deployments</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal-on-scroll">
+          <div class="avatar-wrapper">
+            <div class="avatar-inner">
+              <img src="https://avatars.githubusercontent.com/u/217357768?v=4" alt="Mathuran Profile Portrait" loading="eager">
+            </div>
+          </div>
+
+          <div class="floating-badge badge-top">
+            <span class="badge-icon">🧠</span>
+            <div>
+              <div class="badge-text-title">AI / ML Engineer</div>
+              <div class="badge-text-sub">Predictive & NLP Models</div>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom">
+            <span class="badge-icon">⚡</span>
+            <div>
+              <div class="badge-text-title">Full Stack Architect</div>
+              <div class="badge-text-sub">React • Next.js • Node • Spring</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE AI / ML LAB -->
+    <section class="ai-lab-section" id="ai-playground">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Interactive Demo</span>
+          <h2 class="section-title">In-Browser <span class="text-gradient">AI Intelligence Lab</span></h2>
+          <p class="section-subtitle">
+            Experience real-time machine learning inference directly in your browser. Adjust parameters below to witness automated decision-making and risk scoring in action!
+          </p>
+        </div>
+
+        <div class="ai-lab-grid">
+          <!-- Simulator 1: Customer Churn Predictor -->
+          <div class="glass-card ai-card reveal-on-scroll">
+            <div class="ai-card-top">
+              <div>
+                <h3 class="ai-card-title">Customer Churn Prediction</h3>
+                <p class="ai-card-sub">Predict subscriber churn probability using feature engineering</p>
+              </div>
+              <span class="ai-badge">XGBoost / Logistic</span>
+            </div>
+
+            <form id="churn-form" onsubmit="return false;">
+              <div class="ai-form-group">
+                <div class="ai-label-row">
+                  <span>Tenure Length:</span>
+                  <span class="ai-val-pill" id="churn-tenure-val">12 mo</span>
+                </div>
+                <input type="range" id="churn-tenure" class="ai-slider" min="1" max="72" value="12">
+              </div>
+
+              <div class="ai-form-group">
+                <div class="ai-label-row">
+                  <span>Monthly Charges:</span>
+                  <span class="ai-val-pill" id="churn-charges-val">$70/mo</span>
+                </div>
+                <input type="range" id="churn-charges" class="ai-slider" min="20" max="120" value="70">
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                <div class="ai-form-group">
+                  <label class="ai-label-row" for="churn-contract">Contract Term</label>
+                  <select id="churn-contract" class="ai-select">
+                    <option value="month">Month-to-month</option>
+                    <option value="one-year">One Year</option>
+                    <option value="two-year">Two Year</option>
+                  </select>
+                </div>
+
+                <div class="ai-form-group">
+                  <label class="ai-label-row" for="churn-techsupport">Tech Support</label>
+                  <select id="churn-techsupport" class="ai-select">
+                    <option value="no">No Support Plan</option>
+                    <option value="yes">Dedicated Support</option>
+                  </select>
+                </div>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div class="ai-form-group">
+                  <label class="ai-label-row" for="churn-internet">Internet Plan</label>
+                  <select id="churn-internet" class="ai-select">
+                    <option value="fiber">Fiber Optic</option>
+                    <option value="dsl">DSL</option>
+                    <option value="none">No Internet</option>
+                  </select>
+                </div>
+
+                <div class="ai-form-group">
+                  <label class="ai-label-row" for="churn-payment">Billing Method</label>
+                  <select id="churn-payment" class="ai-select">
+                    <option value="electronic">Electronic Check</option>
+                    <option value="auto">Auto Bank Transfer</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="ai-output-box">
+                <div class="ai-output-header">
+                  <div>
+                    <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Churn Probability</div>
+                    <div class="ai-score-large" id="churn-score-badge">54%</div>
+                  </div>
+                  <div style="text-align: right;">
+                    <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Risk Tier</div>
+                    <div id="churn-risk-status" style="font-weight: 700;">Moderate Risk</div>
+                  </div>
+                </div>
+
+                <div class="progress-track">
+                  <div class="progress-fill" id="churn-score-bar" style="width: 54%;"></div>
+                </div>
+
+                <ul class="ai-factors-list">
+                  <li id="churn-factor-1">⚠️ Month-to-month contract (+32% risk)</li>
+                  <li id="churn-factor-2">⚠️ High monthly billing threshold (+22% risk)</li>
+                  <li id="churn-factor-3">❌ No active Tech Support coverage (+18% risk)</li>
+                </ul>
+
+                <div class="ai-recommendation-pill" id="churn-ai-rec">
+                  Recommended Action: Offer annual loyalty retention tier discount.
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Simulator 2: Obesity & Metabolic Health Classifier -->
+          <div class="glass-card ai-card reveal-on-scroll">
+            <div class="ai-card-top">
+              <div>
+                <h3 class="ai-card-title">Obesity Risk Stratifier</h3>
+                <p class="ai-card-sub">Multi-variable lifestyle & biometric health risk classification</p>
+              </div>
+              <span class="ai-badge">Random Forest / Tree</span>
+            </div>
+
+            <form id="obesity-form" onsubmit="return false;">
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div class="ai-form-group">
+                  <div class="ai-label-row">
+                    <span>Height:</span>
+                    <span class="ai-val-pill" id="obs-height-val">175 cm</span>
+                  </div>
+                  <input type="range" id="obs-height" class="ai-slider" min="140" max="210" value="175">
+                </div>
+
+                <div class="ai-form-group">
+                  <div class="ai-label-row">
+                    <span>Weight:</span>
+                    <span class="ai-val-pill" id="obs-weight-val">74 kg</span>
+                  </div>
+                  <input type="range" id="obs-weight" class="ai-slider" min="40" max="150" value="74">
+                </div>
+              </div>
+
+              <div class="ai-form-group">
+                <div class="ai-label-row">
+                  <span>Age:</span>
+                  <span class="ai-val-pill" id="obs-age-val">24 yrs</span>
+                </div>
+                <input type="range" id="obs-age" class="ai-slider" min="15" max="75" value="24">
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                <div class="ai-form-group">
+                  <label class="ai-label-row" for="obs-activity">Exercise (Days/Wk)</label>
+                  <select id="obs-activity" class="ai-select">
+                    <option value="0">0 Days (Sedentary)</option>
+                    <option value="2">1 - 2 Days (Light)</option>
+                    <option value="4" selected>3 - 4 Days (Moderate)</option>
+                    <option value="6">5+ Days (High)</option>
+                  </select>
+                </div>
+
+                <div class="ai-form-group">
+                  <label class="ai-label-row" for="obs-junk">High-Calorie Meals</label>
+                  <select id="obs-junk" class="ai-select">
+                    <option value="rare">Rarely / Clean Diet</option>
+                    <option value="moderate" selected>Occasionally</option>
+                    <option value="frequent">Frequently / Daily</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="ai-form-group">
+                <label class="ai-label-row" for="obs-water">Daily Hydration</label>
+                <select id="obs-water" class="ai-select">
+                  <option value="1.0">&lt; 1.5 Liters</option>
+                  <option value="2.5" selected>2.0 - 3.0 Liters</option>
+                  <option value="3.5">&gt; 3.0 Liters</option>
+                </select>
+              </div>
+
+              <div class="ai-output-box">
+                <div class="ai-output-header">
+                  <div>
+                    <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Biometric Index</div>
+                    <div class="ai-score-large text-emerald" id="obs-bmi-badge">BMI: 24.2</div>
+                  </div>
+                  <div style="text-align: right;">
+                    <div style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Predicted Class</div>
+                    <div id="obs-tier-badge" style="font-weight: 700; color: var(--accent-emerald);">Healthy Weight</div>
+                  </div>
+                </div>
+
+                <div class="progress-track">
+                  <div class="progress-fill" id="obs-conf-bar" style="width: 96%; background: var(--accent-emerald);"></div>
+                </div>
+
+                <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.75rem;" id="obs-conf-val">
+                  96% Model Confidence
+                </div>
+
+                <div class="ai-recommendation-pill" id="obs-ai-note">
+                  Optimal metabolic health baseline. Maintain consistent strength/aerobic training and hydration.
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SHOWCASE -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Engineered <span class="text-gradient">Projects & Pipelines</span></h2>
+          <p class="section-subtitle">
+            A curated portfolio spanning predictive machine learning models, natural language processing platforms, real-time WebSockets, and enterprise full-stack solutions.
+          </p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="projects-filter-bar reveal-on-scroll">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ai-ml">AI & Machine Learning</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack Web</button>
+          <button class="filter-btn" data-filter="mobile">Mobile Apps (Android)</button>
+        </div>
+
+        <!-- Dynamic Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Populated dynamically by projects-data.js & main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS & ARCHITECTURE -->
+    <section id="skills" style="background: linear-gradient(180deg, transparent 0%, rgba(168, 85, 247, 0.03) 50%, transparent 100%);">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-title">Technical <span class="text-gradient">Stack & Matrix</span></h2>
+          <p class="section-subtitle">
+            Modern technologies and frameworks I leverage to design intelligent systems and scalable software.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Pillar 1: AI & ML -->
+          <div class="glass-card skill-pillar reveal-on-scroll">
+            <div class="pillar-header">
+              <div class="pillar-icon-box">🧠</div>
+              <div>
+                <h3 class="pillar-title">AI & Data Science</h3>
+                <span class="text-muted" style="font-size: 0.8rem;">Machine Learning & Analytics</span>
+              </div>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-badge">🐍 Python</span>
+              <span class="skill-badge">⚡ PyTorch</span>
+              <span class="skill-badge">🔥 TensorFlow</span>
+              <span class="skill-badge">📊 Scikit-Learn</span>
+              <span class="skill-badge">🌲 XGBoost & LightGBM</span>
+              <span class="skill-badge">💬 NLP & Transformers</span>
+              <span class="skill-badge">🐼 Pandas & NumPy</span>
+              <span class="skill-badge">📈 Feature Engineering</span>
+              <span class="skill-badge">📓 Jupyter Notebooks</span>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Frontend -->
+          <div class="glass-card skill-pillar reveal-on-scroll">
+            <div class="pillar-header">
+              <div class="pillar-icon-box purple">🌐</div>
+              <div>
+                <h3 class="pillar-title">Frontend Engineering</h3>
+                <span class="text-muted" style="font-size: 0.8rem;">Modern UI & Performance</span>
+              </div>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-badge">⚛️ React.js</span>
+              <span class="skill-badge">🚀 Next.js</span>
+              <span class="skill-badge">🔷 TypeScript</span>
+              <span class="skill-badge">📜 Modern JavaScript (ES6+)</span>
+              <span class="skill-badge">🎨 TailwindCSS</span>
+              <span class="skill-badge">✨ CSS3 & Animations</span>
+              <span class="skill-badge">📱 Responsive UI / UX</span>
+              <span class="skill-badge">🔌 WebSocket Clients</span>
+            </div>
+          </div>
+
+          <!-- Pillar 3: Backend & DB -->
+          <div class="glass-card skill-pillar reveal-on-scroll">
+            <div class="pillar-header">
+              <div class="pillar-icon-box emerald">⚙️</div>
+              <div>
+                <h3 class="pillar-title">Backend & Cloud</h3>
+                <span class="text-muted" style="font-size: 0.8rem;">Distributed & Microservices</span>
+              </div>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-badge">🟢 Node.js</span>
+              <span class="skill-badge">⚡ Express.js</span>
+              <span class="skill-badge">🍃 Spring Boot (Java)</span>
+              <span class="skill-badge">🍃 MongoDB</span>
+              <span class="skill-badge">🐘 PostgreSQL</span>
+              <span class="skill-badge">🐬 MySQL</span>
+              <span class="skill-badge">🔐 JWT & Auth0</span>
+              <span class="skill-badge">⚡ Socket.IO</span>
+              <span class="skill-badge">🌐 REST APIs</span>
+            </div>
+          </div>
+
+          <!-- Pillar 4: Mobile & DevOps -->
+          <div class="glass-card skill-pillar reveal-on-scroll">
+            <div class="pillar-header">
+              <div class="pillar-icon-box amber">🛠️</div>
+              <div>
+                <h3 class="pillar-title">Mobile & Tools</h3>
+                <span class="text-muted" style="font-size: 0.8rem;">App Dev & CI/CD</span>
+              </div>
+            </div>
+            <div class="skill-pills-list">
+              <span class="skill-badge">🤖 Kotlin (Android)</span>
+              <span class="skill-badge">📱 Android SDK & Room DB</span>
+              <span class="skill-badge">🐙 Git & GitHub</span>
+              <span class="skill-badge">🐳 Docker</span>
+              <span class="skill-badge">▲ Vercel</span>
+              <span class="skill-badge">📮 Postman</span>
+              <span class="skill-badge">🐧 Linux CLI</span>
+              <span class="skill-badge">📦 npm & Yarn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TERMINAL / CLI -->
+    <section class="terminal-section" id="terminal">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Interactive CLI</span>
+          <h2 class="section-title">Developer <span class="text-gradient">Console</span></h2>
+          <p class="section-subtitle">
+            Prefer using command-line tools? Try typing commands like <code class="text-cyan">help</code>, <code class="text-cyan">projects</code>, <code class="text-cyan">skills</code>, or <code class="text-cyan">sudo hire</code>.
+          </p>
+        </div>
+
+        <div class="terminal-window reveal-on-scroll" id="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <div class="terminal-dot dot-red"></div>
+              <div class="terminal-dot dot-yellow"></div>
+              <div class="terminal-dot dot-green"></div>
+            </div>
+            <div class="terminal-title">visitor@mathu-os: ~</div>
+            <div style="font-size: 0.75rem; color: var(--text-muted);">bash</div>
+          </div>
+
+          <div class="terminal-body" id="terminal-output">
+            <!-- Terminal dynamic stream -->
+          </div>
+
+          <div class="terminal-input-bar">
+            <span class="term-prompt">visitor@mathu-os:~$</span>
+            <input type="text" id="terminal-cli-input" class="terminal-cli-input" placeholder="Type a command (e.g. help, skills, contact)..." autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & JOURNEY -->
+    <section id="education">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Academic Foundation</span>
+          <h2 class="section-title">Education & <span class="text-gradient">Milestones</span></h2>
+          <p class="section-subtitle">
+            Strong theoretical and applied grounding in data science, software engineering, and modern computing.
+          </p>
+        </div>
+
+        <div class="timeline-wrap">
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-dot"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-period">Undergraduate Studies • Current</div>
+              <h3 class="timeline-role">B.Sc. (Hons) in Information Technology specializing in Data Science</h3>
+              <div class="timeline-inst">🎓 Sri Lanka Institute of Information Technology (SLIIT), Malabe</div>
+              <p>
+                Specialized coursework focusing on Machine Learning, Deep Neural Networks, Big Data Analytics, Algorithms & Data Structures, Distributed Computing, Database Management Systems, and Software Project Management.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-dot" style="border-color: var(--accent-purple); box-shadow: 0 0 12px var(--accent-purple);"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-period">Applied AI Research & Development</div>
+              <h3 class="timeline-role">Machine Learning & Full-Stack Systems Builder</h3>
+              <div class="timeline-inst">🔬 Independent & Collaborative Labs</div>
+              <p>
+                Developed end-to-end predictive pipelines (Customer Churn, Obesity Stratification, NLP Support Intelligence), real-time WebSockets communication platforms, and enterprise solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" style="background: linear-gradient(180deg, transparent 0%, rgba(0, 240, 255, 0.04) 100%);">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Let's Build Something <span class="text-gradient">Extraordinary</span></h2>
+          <p class="section-subtitle">
+            Have a project in mind, an opportunity to discuss, or just want to connect? Reach out directly!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Info Card -->
+          <div class="glass-card contact-info-card reveal-on-scroll">
+            <div>
+              <h3 style="font-size: 1.5rem; margin-bottom: 0.75rem;">Contact Information</h3>
+              <p>
+                I am actively open to Full Stack Engineering, AI/ML Developer roles, research collaborations, and internships.
+              </p>
+
+              <div class="contact-channel-list">
+                <div class="channel-item">
+                  <div class="channel-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div>
+                    <div class="channel-label">Email Address</div>
+                    <div class="channel-val">mathurank@gmail.com</div>
+                  </div>
+                </div>
+
+                <div class="channel-item">
+                  <div class="channel-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  </div>
+                  <div>
+                    <div class="channel-label">Location</div>
+                    <div class="channel-val">Malabe / Colombo, Sri Lanka</div>
+                  </div>
+                </div>
+
+                <div class="channel-item">
+                  <div class="channel-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                  </div>
+                  <div>
+                    <div class="channel-label">Live Domain</div>
+                    <div class="channel-val">mathu.me</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div style="margin-bottom: 0.75rem; font-size: 0.88rem; font-weight: 600; color: var(--text-secondary);">Connect on Socials</div>
+              <div class="social-links-row">
+                <a href="https://github.com/Mathu-code" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="https://x.com/MassMathuran" target="_blank" rel="noopener noreferrer" class="btn btn-icon" title="Twitter / X">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <button class="btn btn-icon" id="copy-email-btn" title="Copy Email">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Message Form -->
+          <div class="glass-card contact-form-card reveal-on-scroll">
+            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Send a Message</h3>
+            <form id="contact-form">
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="Elon Musk" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Your Email</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="elon@tesla.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="Full Stack / AI Opportunity" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-message">Message</label>
+                <textarea id="contact-message" class="form-textarea" rows="4" placeholder="Hello Mathuran, I came across your portfolio and would love to discuss..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                Send Direct Inquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="brand-logo">
+        <div class="logo-symbol">M</div>
+        <span>mathu<span class="text-cyan">.me</span></span>
+      </div>
+      <p class="footer-text">
+        Designed & Engineered with precision by <strong>Mathuran</strong>. Powered by pure HTML5, modern CSS3, and JavaScript.
+      </p>
+      <div style="font-size: 0.8rem; color: var(--text-muted);">
+        © <span id="current-year">2026</span> Mathuran. All rights reserved. • Hosted on GitHub Pages
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT DEEP DIVE MODAL -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="glass-card modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+
+      <div style="margin-bottom: 0.5rem;">
+        <span class="section-tag" id="modal-category">Machine Learning</span>
+      </div>
+      <h2 id="modal-title" style="font-size: 1.8rem; margin-bottom: 1rem;">Project Title</h2>
+      <p id="modal-desc" style="line-height: 1.7; margin-bottom: 1rem;">Project full description...</p>
+
+      <div class="modal-stats-row" id="modal-stats"></div>
+
+      <h4 style="margin-top: 1.25rem; font-size: 1.05rem;">Key Engineering Highlights:</h4>
+      <ul class="modal-highlights-list" id="modal-highlights"></ul>
+
+      <div style="margin-top: 1.25rem;">
+        <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem;">Technologies Used:</h4>
+        <div class="project-tags" id="modal-tags"></div>
+      </div>
+
+      <div style="display: flex; gap: 1rem; margin-top: 2rem; border-top: 1px solid var(--border-subtle); padding-top: 1.5rem;">
+        <a href="#" id="modal-demo-link" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          Launch Live App
+        </a>
+        <a href="#" id="modal-github-link" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          Source Code
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="contact-toast"></div>
+
+  <!-- Scripts -->
+  <script src="js/projects-data.js"></script>
+  <script src="js/ai-demo.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
