@@ -29,4 +29,4 @@
 - **Website:** [mathu.me](http://mathu.me/)
 - **GitHub:** [@Mathu-code](https://github.com/Mathu-code)
 - **Twitter / X:** [@MassMathuran](https://x.com/MassMathuran)
-- **Email:** `mathurankoneswaran@gmail.com`
+- **Email:** `mathurank@gmail.com`
