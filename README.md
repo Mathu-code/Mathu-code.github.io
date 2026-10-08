@@ -28,7 +28,5 @@
 
 - **Website:** [mathu.me](http://mathu.me/)
 - **GitHub:** [@Mathu-code](https://github.com/Mathu-code)
-- **LinkedIn:** [Mathuran Koneswaran](https://www.linkedin.com/in/mathuran-k)
-- **Facebook:** [Mathuran](https://facebook.com/Mass.Mathuran.9)
 - **Twitter / X:** [@MassMathuran](https://x.com/MassMathuran)
 - **Email:** `mathurankoneswaran@gmail.com`
