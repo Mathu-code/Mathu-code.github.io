@@ -1,5 +1,5 @@
 // Main Portfolio Script for Mathuran (Mathu-code)
-// http://mathu.me
+// https://mathu.me
 
 document.addEventListener("DOMContentLoaded", () => {
   initNeuralBackground();

@@ -78,7 +78,7 @@ function initTerminal() {
 <div class="term-line-resp">
   <span class="term-highlight">📬 Contact & Social Channels:</span><br>
   - GitHub: <a href="https://github.com/Mathu-code" target="_blank" class="term-cyan">github.com/Mathu-code</a><br>
-  - Website: <a href="http://mathu.me" target="_blank" class="term-cyan">mathu.me</a><br>
+  - Website: <a href="https://mathu.me" target="_blank" class="term-cyan">mathu.me</a><br>
   - X / Twitter: <a href="https://x.com/MassMathuran" target="_blank" class="term-cyan">@MassMathuran</a><br>
   - Direct Inquiry: Scroll down to the Contact form or email directly!
 </div>`,

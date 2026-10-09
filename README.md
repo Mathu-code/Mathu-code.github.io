@@ -1,6 +1,6 @@
 # ⚡ Mathuran's Personal Portfolio Website
 
-> **Live Website:** [mathu.me](http://mathu.me/) | [mathu-code.github.io](https://Mathu-code.github.io)  
+> **Live Website:** [mathu.me](https://mathu.me/) | [mathu-code.github.io](https://Mathu-code.github.io)  
 > **Author:** Mathuran ([@Mathu-code](https://github.com/Mathu-code))  
 > **Specialization:** Full Stack Engineering & AI / Machine Learning (Data Science @ SLIIT)
 
@@ -26,7 +26,7 @@
 
 ## 📬 Connect
 
-- **Website:** [mathu.me](http://mathu.me/)
+- **Website:** [mathu.me](https://mathu.me/)
 - **GitHub:** [@Mathu-code](https://github.com/Mathu-code)
 - **Twitter / X:** [@MassMathuran](https://x.com/MassMathuran)
 - **Email:** `mathurankoneswaran@gmail.com`
