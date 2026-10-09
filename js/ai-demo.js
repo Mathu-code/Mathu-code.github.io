@@ -20,6 +20,8 @@ function initChurnPredictor() {
   const internetInput = document.getElementById("churn-internet");
   const paymentInput = document.getElementById("churn-payment");
 
+  if (!tenureInput || !chargesInput || !contractInput || !techSupportInput || !internetInput || !paymentInput) return;
+
   // Output elements
   const scoreBadge = document.getElementById("churn-score-badge");
   const scoreBar = document.getElementById("churn-score-bar");
@@ -38,8 +40,8 @@ function initChurnPredictor() {
     const internet = internetInput.value; // 'fiber', 'dsl', 'none'
     const payment = paymentInput.value; // 'electronic', 'auto'
 
-    tenureVal.textContent = `${tenure} mo`;
-    chargesVal.textContent = `$${charges}/mo`;
+    if (tenureVal) tenureVal.textContent = `${tenure} mo`;
+    if (chargesVal) chargesVal.textContent = `$${charges}/mo`;
 
     // Mathematical logistic scoring mimicking trained XGBoost/Logistic Regression weights
     let logit = -1.2; // Base log-odds bias
@@ -72,8 +74,8 @@ function initChurnPredictor() {
     const percentage = Math.round(prob * 100);
 
     // Update UI
-    scoreBadge.textContent = `${percentage}%`;
-    scoreBar.style.width = `${percentage}%`;
+    if (scoreBadge) scoreBadge.textContent = `${percentage}%`;
+    if (scoreBar) scoreBar.style.width = `${percentage}%`;
 
     let statusText = "Low Churn Risk";
     let statusColor = "var(--accent-emerald)";
@@ -82,29 +84,29 @@ function initChurnPredictor() {
     if (percentage > 65) {
       statusText = "High / Critical Churn Risk";
       statusColor = "var(--accent-ruby)";
-      scoreBar.style.background = "linear-gradient(90deg, #f59e0b, #ef4444)";
-      scoreBadge.style.color = "#ef4444";
+      if (scoreBar) scoreBar.style.background = "linear-gradient(90deg, #f59e0b, #ef4444)";
+      if (scoreBadge) scoreBadge.style.color = "#ef4444";
       recommendation = "Immediate Retention Action: Offer annual contract incentive discount and priority technical onboarding support.";
     } else if (percentage >= 35) {
       statusText = "Moderate Churn Risk";
       statusColor = "var(--accent-amber)";
-      scoreBar.style.background = "linear-gradient(90deg, #10b981, #f59e0b)";
-      scoreBadge.style.color = "#f59e0b";
+      if (scoreBar) scoreBar.style.background = "linear-gradient(90deg, #10b981, #f59e0b)";
+      if (scoreBadge) scoreBadge.style.color = "#f59e0b";
       recommendation = "Proactive Check-in: Send service satisfaction survey and recommend add-on loyalty benefits.";
     } else {
-      scoreBar.style.background = "linear-gradient(90deg, #06b6d4, #10b981)";
-      scoreBadge.style.color = "#10b981";
+      if (scoreBar) scoreBar.style.background = "linear-gradient(90deg, #06b6d4, #10b981)";
+      if (scoreBadge) scoreBadge.style.color = "#10b981";
     }
 
-    riskStatus.textContent = statusText;
-    riskStatus.style.color = statusColor;
-    riskText.textContent = `Predicted probability of customer cancellation within next billing cycle: ${percentage}%`;
-    aiRec.textContent = recommendation;
+    if (riskStatus) riskStatus.textContent = statusText;
+    if (riskStatus) riskStatus.style.color = statusColor;
+    if (riskText) riskText.textContent = `Predicted probability of customer cancellation within next billing cycle: ${percentage}%`;
+    if (aiRec) aiRec.textContent = recommendation;
 
     // Factor highlights
-    factor1.textContent = contract === "month" ? "❌ Month-to-month contract (+32% risk)" : "✅ Long-term contract commitment (-28% risk)";
-    factor2.textContent = charges > 80 ? "⚠️ High monthly billing threshold (+22% risk)" : "✅ Affordable billing tier (-15% risk)";
-    factor3.textContent = !techSupport ? "❌ No active Tech Support coverage (+18% risk)" : "✅ Active dedicated Tech Support (-20% risk)";
+    if (factor1) factor1.textContent = contract === "month" ? "❌ Month-to-month contract (+32% risk)" : "✅ Long-term contract commitment (-28% risk)";
+    if (factor2) factor2.textContent = charges > 80 ? "⚠️ High monthly billing threshold (+22% risk)" : "✅ Affordable billing tier (-15% risk)";
+    if (factor3) factor3.textContent = !techSupport ? "❌ No active Tech Support coverage (+18% risk)" : "✅ Active dedicated Tech Support (-20% risk)";
   }
 
   [tenureInput, chargesInput, contractInput, techSupportInput, internetInput, paymentInput].forEach(el => {
@@ -130,6 +132,8 @@ function initObesityClassifier() {
   const junkInput = document.getElementById("obs-junk");
   const waterInput = document.getElementById("obs-water");
 
+  if (!ageInput || !heightInput || !weightInput || !activityInput || !junkInput || !waterInput) return;
+
   // Output elements
   const bmiBadge = document.getElementById("obs-bmi-badge");
   const tierBadge = document.getElementById("obs-tier-badge");
@@ -145,9 +149,9 @@ function initObesityClassifier() {
     const junkFreq = junkInput.value; // 'frequent', 'moderate', 'rare'
     const waterLiters = parseFloat(waterInput.value) || 2.5;
 
-    ageVal.textContent = `${age} yrs`;
-    heightVal.textContent = `${heightCm} cm`;
-    weightVal.textContent = `${weightKg} kg`;
+    if (ageVal) ageVal.textContent = `${age} yrs`;
+    if (heightVal) heightVal.textContent = `${heightCm} cm`;
+    if (weightVal) weightVal.textContent = `${weightKg} kg`;
 
     // Standard BMI Calculation
     const heightM = heightCm / 100;
@@ -194,12 +198,12 @@ function initObesityClassifier() {
       guidance = "High priority metabolic intervention advised. Comprehensive dietary restructuring, endocrinologist consultation, and lifestyle remodeling recommended.";
     }
 
-    bmiBadge.textContent = `BMI: ${roundedBmi}`;
-    tierBadge.textContent = classification;
-    tierBadge.style.color = color;
-    confBar.style.width = `${confidence}%`;
-    confVal.textContent = `${confidence}% AI Confidence`;
-    obsAiNote.textContent = guidance;
+    if (bmiBadge) bmiBadge.textContent = `BMI: ${roundedBmi}`;
+    if (tierBadge) tierBadge.textContent = classification;
+    if (tierBadge) tierBadge.style.color = color;
+    if (confBar) confBar.style.width = `${confidence}%`;
+    if (confVal) confVal.textContent = `${confidence}% AI Confidence`;
+    if (obsAiNote) obsAiNote.textContent = guidance;
   }
 
   [ageInput, heightInput, weightInput, activityInput, junkInput, waterInput].forEach(el => {
