@@ -150,7 +150,6 @@ function initTypingEffect() {
   const roles = [
     "Full Stack Engineer",
     "AI / Machine Learning Specialist",
-    "Data Science @ SLIIT",
     "Deep Learning & NLP Practitioner",
     "MERN & Cloud Architect"
   ];
