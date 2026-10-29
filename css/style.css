@@ -378,6 +378,10 @@ section {
   gap: 1rem;
 }
 
+.hire-me-link {
+  display: inline-flex;
+}
+
 .theme-toggle-btn {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--border-subtle);
@@ -1455,6 +1459,10 @@ section {
 
 @media (max-width: 768px) {
   .nav-menu {
+    display: none;
+  }
+
+  .hire-me-link {
     display: none;
   }
 

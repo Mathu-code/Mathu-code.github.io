@@ -69,8 +69,10 @@ function initNeuralBackground() {
         const dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < mouse.radius) {
           const force = (mouse.radius - dist) / mouse.radius;
-          this.x -= (dx / dist) * force * 2.5;
-          this.y -= (dy / dist) * force * 2.5;
+          if (dist > 0) {
+            this.x -= (dx / dist) * force * 2.5;
+            this.y -= (dy / dist) * force * 2.5;
+          }
         }
       }
     }
